@@ -1,0 +1,106 @@
+{
+  "modelo_llm_e_juiz": "qwen2.5:7b",
+  "modelo_embeddings": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "chunking": "v2_1000_com_overlap",
+  "k": 4,
+  "por_pergunta": [
+    {
+      "pergunta": "Quais servicos o Programa Acessa Cidade reune?",
+      "nivel": 1,
+      "ground_truth": "O programa reúne serviços de acessibilidade da prefeitura, incluindo emissão do Cartão Passe Livre para pessoas com deficiência, atendimento em Libras e solicitação de rampas e pisos táteis nas calçadas.",
+      "resposta": "O Programa Acessa Cidade reúne os serviços de acessibilidade da prefeitura, incluindo emissão do Cartão Passe Livre para pessoas com deficiência, atendimento em Libras e pedido de rampas e pisos táteis nas calçadas. (fonte: doc_01_guia)",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.742,
+      "context_precision": 0.833,
+      "context_recall": 1.0
+    },
+    {
+      "pergunta": "Quais documentos sao necessarios para pedir o Cartao Passe Livre?",
+      "nivel": 1,
+      "ground_truth": "São necessários documento com foto, comprovante de residência e laudo médico que comprove a deficiência. O laudo deve ter sido emitido há, no máximo, 5 anos.",
+      "resposta": "Para pedir o Cartao Passe Livre, é necessário apresentar documento com foto, comprovante de residência e laudo médico que ateste a deficiência. O laudo deve ter sido emitido no máximo há 5 anos. (fonte: doc_01_guia)",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.701,
+      "context_precision": 0.333,
+      "context_recall": 1.0
+    },
+    {
+      "pergunta": "Por quanto tempo vale o Cartao Passe Livre?",
+      "nivel": 1,
+      "ground_truth": "O Cartão Passe Livre tem validade de 2 anos, sendo necessário solicitar a renovação antes do vencimento.",
+      "resposta": "O cartão Passe Livre vale por 2 anos, conforme informado no documento de guia do Programa Acessa Cidade (fonte: doc_id=doc_01_guia, data=2026-03-10).",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.566,
+      "context_precision": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "pergunta": "Qual o telefone para reclamacoes e sugestoes?",
+      "nivel": 1,
+      "ground_truth": "O telefone é 156. Também é possível registrar reclamações e sugestões presencialmente na Central de Atendimento.",
+      "resposta": "Nao ha informacao na base sobre isso.",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.417,
+      "context_recall": 0.5
+    },
+    {
+      "pergunta": "A Central de Atendimento atende aos sabados?",
+      "nivel": 2,
+      "ground_truth": "Não. Desde 1º de outubro de 2026, o atendimento presencial aos sábados foi suspenso pela Portaria SMIA nº 087/2026. Entretanto, o telefone 156 continua funcionando todos os dias.",
+      "resposta": "Sim, a Central de Atendimento Acessa Cidade atende aos sábados, das 08h00 às 12h00, conforme informado na Portaria SMIA n. 087/2026 (fonte: doc_id=doc_02_portaria).",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.362,
+      "context_precision": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "pergunta": "Posso fazer atendimento presencial em Libras na Central?",
+      "nivel": 2,
+      "ground_truth": "Não. Durante o período de obras, o atendimento presencial em Libras está suspenso em todas as unidades. O serviço é oferecido exclusivamente por videochamada, mediante agendamento pelo telefone 156.",
+      "resposta": "Sim, pode fazer atendimento presencial em Libras na Central, mas é necessário agendamento pelo telefone 156, de segunda a sexta. No entanto, durante as obras na Central U-01, o atendimento em Libras será feito por videochamada. (fonte: doc_id=doc_03_comunicado)",
+      "faithfulness": 0.667,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.333,
+      "context_recall": 1.0
+    },
+    {
+      "pergunta": "Meu laudo medico foi emitido ha 7 anos, ele serve para pedir o Cartao Passe Livre?",
+      "nivel": 2,
+      "ground_truth": "Não. O laudo médico precisa ter sido emitido há, no máximo, 5 anos. Portanto, um documento emitido há 7 anos não atende aos requisitos para solicitar o Cartão Passe Livre.",
+      "resposta": "Nao ha informacao na base sobre isso. (fonte: doc_id=doc_01_guia)",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.333,
+      "context_recall": 1.0
+    },
+    {
+      "pergunta": "Qual e o prazo para emissao do Cartao Passe Livre apos a entrega dos documentos?",
+      "nivel": 2,
+      "ground_truth": "O prazo para emissão é de 10 dias úteis após a entrega de toda a documentação necessária, conforme estabelecido pela Portaria SMIA nº 087/2026.",
+      "resposta": "O prazo para emissão do Cartão Passe Livre foi alterado para 10 dias úteis após a entrega dos documentos, conforme a Portaria SMIA n. 087/2026 (fonte: doc_id=doc_02_portaria).",
+      "faithfulness": 0.667,
+      "answer_relevancy": 0.829,
+      "context_precision": 0.5,
+      "context_recall": 1.0
+    }
+  ],
+  "media": {
+    "faithfulness": 0.542,
+    "answer_relevancy": 0.4,
+    "context_precision": 0.594,
+    "context_recall": 0.938
+  },
+  "media_nivel_1": {
+    "faithfulness": 0.625,
+    "answer_relevancy": 0.502,
+    "context_precision": 0.646,
+    "context_recall": 0.875
+  },
+  "media_nivel_2": {
+    "faithfulness": 0.458,
+    "answer_relevancy": 0.298,
+    "context_precision": 0.542,
+    "context_recall": 1.0
+  }
+}

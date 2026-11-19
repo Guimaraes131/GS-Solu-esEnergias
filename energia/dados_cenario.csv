@@ -1,0 +1,9 @@
+indicador,valor,unidade,tipo,origem_ou_premissa
+consumo_residencial_medio,179.7,kWh/mes,referencia_publica,"EPE: média residencial Brasil em dez/2024; usar apenas como referência"
+tarifa_efetiva_modelada,0.95,BRL/kWh,premissa,"Valor didático arredondado; substituir pelo custo efetivo da fatura local"
+reducao_por_eficiencia,15,%,premissa,"Hipótese de economia para comparar cenário; não é resultado medido"
+custo_medidas_eficiencia,250,BRL,premissa,"Orçamento hipotético para medidas comportamentais e itens simples"
+potencia_sistema_fv,1.5,kWp,premissa,"Sistema fotovoltaico hipotético"
+produtividade_fv,110,kWh/kWp/mes,premissa,"Hipótese média de produtividade; validar no Atlas Solar/instalador para endereço e telhado"
+fracao_aproveitada_fv,0.8,%,premissa,"Hipótese de energia efetivamente aproveitada/compensada; perfil horário e regras locais alteram o resultado"
+investimento_fv,9000,BRL,premissa,"Investimento hipotético, não é cotação de mercado"

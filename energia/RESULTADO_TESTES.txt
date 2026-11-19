@@ -1,0 +1,6 @@
+Teste automatizado da calculadora de energia
+Comando: python -m unittest discover -s energia -p 'test_*.py' -v
+Data da execucao: 19/11/2026
+Resultado: 4 testes aprovados; 0 falhas.
+Casos: valores do cenario-base, calculo de eficiencia, limite de energia solar aproveitada ao consumo e rejeicao de tarifa invalida.
+Observacao: estes sao testes automatizados do modulo, nao testes de usabilidade com usuarios.

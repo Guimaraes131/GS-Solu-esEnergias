@@ -1,0 +1,20 @@
+CERTIFICACAO - GS2026.2 CitizenTech
+Disciplina: Prompt and Artificial Intelligence - Prof. Jorge Luiz Gomes
+Frente: C - Acessibilidade (Programa Acessa Cidade)
+Grupo: RotaCerta | Turma: 1CCR | Modalidade: trio
+
+Integrantes
+Filipe Gunther - RM 571131
+Lucas Pinheiro - RM 573497
+Guilherme Guimaraes - RM 572957
+
+Tela final
+Print da tela final do notebook depois do Run all completo (ultima celula executada, sem erro): [PREENCHER nome do arquivo, ex.: prints/08_tela_final.png]
+
+Links
+Notebook no Google Colab (compartilhado com qualquer pessoa com o link, sem chave de API): [PREENCHER]
+Video de demonstracao (YouTube nao listado, ate 3 minutos): [PREENCHER]
+Repositorio, se houver: [PREENCHER ou apagar esta linha]
+
+Declaracao
+Nenhuma chave de API foi usada ou escrita no notebook, no zip ou nos prints. O modelo roda localmente no Colab via Ollama. O ground truth do RAGAS foi escrito pelo grupo. O uso de IA esta registrado em 6_Chat_Log.txt.

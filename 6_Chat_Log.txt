@@ -1,0 +1,30 @@
+REGISTRO DE USO DE IA - GS2026.2 CitizenTech (Grupo RotaCerta, turma 1CCR)
+
+Ferramenta: Claude (Anthropic), usado pelo chat como assistente de desenvolvimento.
+
+Este registro diz o que a IA fez, o que ela nao fez e o que o grupo ainda precisa fazer ou confirmar. Os campos [PREENCHER] so devem ser trocados por coisas que realmente aconteceram.
+
+SESSAO 1 - PRIMEIRA VERSAO DO PROJETO
+
+Pedido feito a IA: montar o projeto completo da GS a partir do briefing em PDF (frente A, mobilidade urbana).
+
+O que a IA produziu: rascunho dos 3 documentos da base documental, rascunho do notebook (pipeline com LCEL, ferramentas, agente, Gradio, guardrails e codigo do RAGAS), README e modelos dos demais arquivos.
+
+SESSAO 2 - TROCA PARA MODELO LOCAL
+
+Pedido feito a IA: trocar o modelo do notebook (gpt-oss:120b pelo Ollama Cloud) por um modelo local.
+
+O que a IA fez: o notebook passou a usar o qwen2.5:7b via Ollama instalado dentro do Colab (qwen2.5:3b se nao houver GPU), sem chave de API. espera o servidor do Ollama subir, limite de tokens por resposta, teto de tempo no agente, limites do RAGAS (2 chamadas em paralelo, timeout, strictness 1), recriacao da base se a pasta nao for enviada, colecao do ChromaDB recriada a cada execucao, guardrails que ignoram acento, e RAGAS pulado sem erro enquanto o ground truth nao estivesse escrito.
+
+
+SESSAO 3 - GROUND TRUTH (18/11/2026)
+
+O ground truth das 8 perguntas foi escrito por Filipe Gunther sozinho, com as proprias palavras, e enviado pelo chat. A IA apenas copiou o texto dele para a secao 7 do notebook, sem alterar as respostas. A unica mudanca da IA foi trocar o texto da pergunta 8 no notebook pelo texto que ele enviou.
+
+O QUE A IA NAO FEZ
+
+- Nao rodou o notebook com o modelo real nem mediu valores de RAGAS.
+- Nao criou o 3_avaliacao_ragas.json. Ele so existe depois da execucao real do notebook no Colab.
+- Nao gravou o video, nao preencheu os links do 5_certificacao.txt e do 7_demo_video_url.txt e nao tirou os prints.
+- Nao escreveu a explicacao dos numeros do RAGAS nem a conclusao.
+- Nao gerou o Ground Truth.
