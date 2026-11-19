@@ -1,5 +1,10 @@
 # Contribuição de Energias Renováveis e Sustentáveis — CitizenTech
 
+## Integrantes
+Guilherme Guimarães - RM 572957
+Filipe Gunther — RM 571131
+Lucas Pinheiro — RM 573497
+
 ## Contexto e público
 Público escolhido: moradores de residências brasileiras que desejam compreender a conta de luz, reduzir desperdício e avaliar geração solar fotovoltaica. O cenário numérico usa o consumo residencial médio nacional publicado pela EPE para dezembro de 2024 (179,7 kWh/mês), apenas como referência didática. Não representa a conta de uma família específica nem a média atual de São Paulo.
 
